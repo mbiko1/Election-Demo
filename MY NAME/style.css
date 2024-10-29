@@ -1,0 +1,779 @@
+/*------This part Defines the 'Poppins' google font-------*/
+/*NORMAL*/
+@font-face{
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*------------------------------------------*/
+ /*BOLD*/
+@font-face{
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+/*-------------------------------------------------*/
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body{
+    /* overflow: hidden; */
+    height: 100vh;
+}
+
+/* a{
+    text-decoration: none;
+    color: #6C6C6C;
+    /* font-size: 20px; 
+} */
+
+
+/* -----------------HOME----------------------- */
+
+/* ------------------HEADER START---------------- */
+.divHeader{
+    height: 20%;
+    padding-top: 1%;}
+
+.divHeader label{
+    padding-top: 4%;
+    margin-left: 5%;
+    font-size: 1.5rem;
+}
+
+.divHeader .head button{
+    margin-top: 1%;
+    margin-left: 2% ;
+    border-radius: 20px;
+    width: 10%;
+    height: 5%;
+    background-color:#585858;
+    color: white;
+    font-size: 2rem;
+    outline: none;
+    border: 0;
+    height: 50px;
+
+}
+.head{
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+    width: 100%;
+}
+
+/* -------------COUNTDOWN----------- */
+.countD{
+    display: flex;
+    background-color: #6C6C6C;
+    color: white;
+    height: 2%;
+    /* margin-top: 1%; */
+    margin-left: 5%;
+    border: 2px solid #6C6C6C;
+    border-radius: 10px;
+    flex-direction: row;
+    align-items: center;
+    padding: 1%;
+    justify-content: center;
+    gap: 5%;
+    width: 20%;
+
+}
+
+
+.countD div{
+    flex-basis: 5%;
+    height: 10%;
+    background-color: #6C6C6C;
+    /* border: 2px solid #6C6C6C; */
+    border-radius: 10px;
+    padding: 2%;
+    width: 30%;    
+}
+
+.countD div p{
+    font-size: 1.2rem;
+    margin-bottom: -2%;
+    /* display: inline-block; */
+    width: 3ch;
+}
+/* -------------COUNTDOWN END-------------- */
+
+
+
+.divHeader .head ul{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    gap: 5%;
+    /* margin-left: 40%; */
+    /* padding-top: 2%;   */
+}
+
+.divHeader .head ul li{
+    list-style-type: none ;
+    display: inline-flex;
+    font-size: 1.2rem; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+.divHeader .head ul li:hover{
+    transform: translateY(0) scale(1.25)
+}
+ul li a{
+    text-decoration: none; 
+    color: black;
+    position: relative; 
+    height: 35%;
+    /* padding-bottom: 2px;  */
+    transition: color 0.3s ease; /
+}
+li a::after{
+    content: ''; 
+    position: absolute;
+    margin-left: 10%;
+    border-radius: 10px;
+    left: 0;
+    bottom: 0;
+    width: 0; 
+    height: 2px;
+    background-color:#6C6C6C ; 
+    transition: width 0.3s ease; 
+
+}
+
+li a:hover::after{
+    /* transform: scale(1.3); */
+    width: 80%;
+    transform: translateY(0) scale(1.25);
+    
+}
+
+/* ---------------------HEADER END-------------- */
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+   
+}
+.container .leftDiv{
+    padding-bottom: 5%;
+    padding-left: 5%; 
+    display: flex;
+    flex-direction: column;
+    /* gap: 10%; */
+    width: 60%;
+    align-items: center;
+    margin-top: 5%;
+    /* justify-content: center; */
+}
+.container .leftDiv h1{
+    color: #6C6C6C;
+    font-weight: 500;
+    font-size: 3rem;
+}
+.container .leftDiv h2{
+    color: black;
+    font-weight: 500;
+    padding-left: 2%;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+ 
+}
+.container .leftDiv #ArrowIcon{
+    color: #6C6C6C;
+    font-size: 2rem;
+}
+.movingText{
+    /* padding-top: 2%; */
+    position: relative;
+    /* border: 2px solid black; */
+    height: 20%;
+}
+.staticText{
+    /* border: 2px solid black; */
+    position: relative;
+}
+.container .rightDiv{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* padding-top: 10%;
+    padding-left: 10%; */
+}
+.container .rightDiv img{
+    width: 60%;
+    height: auto;
+     /* object-fit: cover;  */
+    
+}
+.container .rightDiv button{
+    border-radius: 10px;
+    width: 30%;
+    background-color:#6C6C6C;
+    color: white;
+    font-size: 2rem;
+    outline: none;
+    border: 0;
+    height: 50px;
+}
+
+.container .rightDiv button:active{
+    transform: scale(0.95);
+}
+.container .rightDiv button a{
+    text-decoration: none;
+    color: white;
+}
+
+/* -------------------HOME END------------------------- */
+
+/* -------------------ABOUT ELECTIONS--------------------- */
+
+.AboutCon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* height: 100vh; */
+    align-items: center;
+    padding-bottom: 10%;
+    /* width: 80%; */
+    margin: 0 auto;
+}
+.AboutCon div{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+}
+b{
+    color:#434343;
+    font-size: 20px;
+}
+/* .AboutCon div ul{
+    display: flex;
+    flex-direction: column;
+} */
+.AboutCon h1{
+    padding-top: 2%;
+    font-weight: 500;
+    font-size: 4rem;
+    color: #6C6C6C;
+}
+ 
+.AboutCon div label{
+    display: block;
+    font-size: 2rem;
+    margin-right: auto;
+    /* text-align: left; */
+    font-weight: bold;
+    margin-left: 15%;
+    color: #6C6C6C;
+}
+/* .AboutCon div .second{
+    margin-right: 30%;
+} */
+.AboutCon p{
+    width: 70%;
+    padding-bottom: 1%;
+}
+.AboutCon .WhoVote p{
+    font-weight: bold;
+}
+.AboutCon div ul li{
+    list-style: none;
+    position: relative;
+    width: 100%;
+    padding-left: 2%;
+    /* display: block; */
+    
+}
+.AboutCon div  li::after{
+    content: "\f0da"; 
+    font-family: "Font Awesome 5 Free"; 
+    color: #6C6C6C;
+    font-weight: 900; 
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+}
+.AboutCon div h2{
+    color:#6C6C6C;
+    font-weight: 500;
+    margin-right:  auto;
+    margin-left: 15%;
+    font-size: 3rem;
+    margin-top: 2%;
+}
+/* .AboutCon  .WhoVote{
+    /* margin-right: 1%; */
+    /* height: 30%;
+    width: 100%; 
+} */
+.AboutCon div span{
+    padding-left: 20%;
+}
+
+
+/* ---------------------ABOUT END-------------------------- */
+
+/* ------------------HOW TO VOTE--------------------------- */
+.how-to-vote-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10%;
+    width: 100%;
+    /* margin: 0 auto; */
+    color: #6C6C6C;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+.how-to-vote-container h1 {
+padding-top: 2%;
+    font-weight: 500;
+    font-size: 4rem;
+    color: #6C6C6C;
+    text-align: center;
+}
+
+
+.how-to-vote-container h2 {
+    color: #6C6C6C;
+    font-weight: 500;
+    font-size: 3rem;
+    margin-right: auto;
+    margin-left: 15%;
+    margin-top: 2%;
+}
+
+
+.how-to-vote-container p {
+    width: 70%;
+    padding-bottom: 1%;
+    font-size: 1.2rem; 
+    color: #434343;
+}
+
+
+.how-to-vote-container p strong {
+    font-size: 20px;
+    color: #434343;
+}
+
+
+.how-to-vote-container ul {
+    list-style: none;
+    width: 100%;
+    padding-left: 2%;
+}
+
+.how-to-vote-container ul li {
+    position: relative;
+    padding-left: 2%;
+    font-size: 1.2rem;
+    color: #434343;
+}
+
+.how-to-vote-container ul li::after {
+    content: "\f0da"; 
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #6C6C6C;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.how-to-vote-container label {
+    display: block;
+    font-size: 2rem; 
+    margin-left: 15%;
+    font-weight: bold;
+    color: #6C6C6C;
+}
+
+
+@media (max-width: 768px) {
+    .how-to-vote-container {
+        width: 90%;
+    }
+    
+    .how-to-vote-container h1 {
+        font-size: 2.5rem;
+    }
+    
+    .how-to-vote-container h2 {
+        font-size: 2rem;
+    }
+    
+    .how-to-vote-container p, .how-to-vote-container ul li {
+        font-size: 1rem;
+    }
+}
+
+/* ------------------HOW TO VOTE END----------------------- */
+
+/* --------------------CANDIDATE---------------------------- */
+
+.candCont {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.voting-section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.voting-section h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    justify-items: center;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: bold;
+    color: #555;
+    
+}
+
+.card:hover {
+    cursor: pointer;
+}
+/* ---------------------CANDIDATE END----------------------- */
+
+
+
+
+/* ------------------------FAQs------------------------------ */
+.FAQ{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+    padding-bottom: 4%;
+    overflow: hidden;
+    align-items: center;
+}
+.FAQ div{
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    width: 70%;
+    height: 70%;
+    border: 2px solid #6C6C6C;
+    border-radius: 10px;
+}
+.FAQ h1{
+    font-weight: 500;
+    font-size: 6rem;
+    color: #6C6C6C;
+}
+.FAQ label{
+    background-color: #6C6C6C;
+    color: white;
+    font-size: 1.5rem;
+    height: 40%;
+    margin-bottom: 1%;
+    border-radius: 9px;
+    width: 100%;
+}
+.FAQ p{
+    padding-left: 2%;
+}
+
+.pansi{
+    width: 100%;
+}
+
+/* ---------------------FAQs END----------------------------- */
+
+
+
+/* ------------------HELP SECTION--------------------------- */
+.HELP{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 65%;
+    width: 100%;
+}
+.HELP h1{
+    font-weight: 500;
+    font-size: 5rem;
+    color: #6C6C6C;
+    padding-top: 5%;
+    border-bottom: 2px solid #6C6C6C;
+    border-bottom-width: 60%;
+}
+.HELP label{
+    background-color: #6C6C6C;
+
+}
+.HELP input{
+    border-radius: 10px;
+    height: 10%;
+    font-size: 2rem;
+    font-weight: 500;
+    width: 30%;
+}
+.fastH{
+    display: grid;
+    /* flex-direction: row; */
+    grid-template-columns: repeat(3,1fr);
+    gap: 3%;
+    padding-left: 5%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 80%;
+
+}
+.fastH div{
+    display: flex;
+    flex-direction: column;
+    border : 2px solid #6C6C6C;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    /* gap: 4%; */
+    width: 70%;
+    transition: 0.2s ease-out;
+}
+.fastH div:hover{
+    transform: scale(1.1);
+}
+
+.fastH div .fas{
+    font-size: 4rem;
+    color: #6C6C6C;
+    padding-bottom: 6%;
+    border-bottom: 2px solid #6C6C6C;
+    border-bottom-width: 70%;
+}
+
+.fastH a{
+    text-decoration: none;
+    height: 80%;
+    color: #6C6C6C;
+}
+.special{
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    width: 100%;
+}
+.special form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    width: 80%;
+    border-bottom: 1px solid #6C6C6C;
+}
+.special form textarea{
+    width: 72%;
+}
+.special form textarea::placeholder{
+    opacity: 0.6;
+}
+.special form button{
+    width: 10%;
+    background-color: #8b8686;
+    color: white;
+    margin-left: 65% ;
+    border-radius: 10px;
+    margin-top: 2%;
+    height: 15%;
+    font-size: 1.5rem;
+    outline: none;
+}
+.innerHelp{
+    text-decoration: none;
+    color: white;
+}
+
+.special label{
+    margin-right: auto;
+    margin-left: 15%;
+    color:#6C6C6C;
+    width: 60%;
+    font-size: 2rem;
+}
+
+
+.special textarea{
+    resize: none;
+    height: 70%;
+    margin-left: 3%;
+    font-size: 2rem;
+    width: 40%;
+    border-radius: 10px;
+
+    /* height: 50%; */
+}
+/* ----------------------HELP END------------------------------- */
+hr{
+    height: 2px;
+    border: 2px solid #6C6C6C;
+}
+
+/* --------------------FOOTER---------------------------------- */
+.footer{
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    color:white;
+    background-color: #6C6C6C;
+    width: 100%;
+    margin-bottom: 5%;
+}
+.footer .upperCont{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    width: 100%;
+}
+.footer .upperCont .QuickLinks{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    padding-top: 2%;
+    padding-left: 2%;
+    font-size: 1.5rem;
+    width: 30%;
+}
+.footer .upperCont .QuickLinks label{
+    font-size: 1.5rem;
+
+}
+
+.footer .upperCont .QuickLinks ul li{
+    position: relative;
+    padding-left: 6%;
+    list-style-type: none;
+    transition: 0.3s ease; 
+}
+.footer .upperCont .QuickLinks ul li a{
+    color: white;
+}
+.footer .upperCont .QuickLinks ul li #ArrowIcon{
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.footer .upperCont .QuickLinks ul li:hover{
+    visibility: visible;
+    transform:translateX(10px) ;
+}
+
+.footer .upperCont .QuickLinks ul li:hover #ArrowIcon{
+    visibility: visible;
+    opacity: 1;
+
+}
+.footer .upperCont .SecOnUpper{
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+}
+.footer .upperCont .SecOnUpper label{
+    font-size: 1.5rem;
+}
+
+.footer .upperCont .SecOnUpper li{
+    padding-bottom: 2%;
+}
+
+.footer .upperCont .ThirdOnUpper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3%;
+    justify-content: center;
+    width: 40%;
+}
+.footer .upperCont .ThirdOnUpper label{
+  font-size: 1.5rem;
+}
+.footer .upperCont .ThirdOnUpper ul li{
+    list-style-type: none;
+    padding-bottom: 2%;
+}
+.footer .upperCont .ThirdOnUpper ul li a{
+    color: white;
+}
+.footer .downCont{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 10%;
+    padding-top: 7%;
+    gap: 3%;
+    align-items: center;
+    justify-content: center;
+}
+.footer .downCont .redirections{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3%;
+    width: 100%;
+    justify-content: center;
+
+}
+.footer .downCont .redirections i{
+    font-size: 2rem;
+}
+.footer .downCont .redirections a{
+    color: white;
+}
+.footer .downCont .copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3%;
+}
+/* -----------------------FOOTER END-------------------------- */
